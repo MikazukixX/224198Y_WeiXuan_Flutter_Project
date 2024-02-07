@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://localhost/Sep_Page/filterpage.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        /* Add your CSS styles here */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px; /* Adjust the radius as needed */
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>Admin Page</h2>
+
+
+
+
+<h1><center>Current Filter</center></h1>
+
+<table border="1"><tbody><tr></tr><tr><td>Chinese<br></td><td>Muslim<br></td><td>Taiwan<br></td><td>Japan<br></td></tr><tr><td>Korean<br></td><td>Mexicanss<br></td></tr></tbody></table>
+
+
+
+<br>
+
+<h1><center>Adding Filter<center></center></center></h1>  
+
+<br>
+<!-- <form id="insertForm" onsubmit="insertData(event)"> -->
+
+<form method="post" action="http://localhost/Sep_Page/insertPosting.php">
+
+
+
+<center><input type="text" name="filter" placeholder="Enter your text"><center>
+    <br>
+<center><input type="submit" value="Submit"><center>
+
+
+
+
+<h1>Delete of Filter </h1>
+
+
+<form method="post" action="http://localhost/Sep_Page/DeletePosting.php">
+<table border="1"><tbody><tr></tr><tr><td><input type="radio" name="id" value="1">Chinese<br></td><td><input type="radio" name="id" value="2">Muslim<br></td><td><input type="radio" name="id" value="3">Taiwan<br></td><td><input type="radio" name="id" value="4">Japan<br></td></tr><tr><td><input type="radio" name="id" value="5">Korean<br></td><td><input type="radio" name="id" value="8">Mexicanss<br></td></tr></tbody></table><br>
+<center><input type="submit" value="Delete"><center>
+
+
+
+
+<h1>Edit of Filter </h1>
+
+
+<form method="post" action="http://localhost/Sep_Page/EditPosting.php">
+<table border="1"><tbody><tr></tr><tr><td>  <input type="hidden" name="idss" value="1"><input type="Text" name="id" value="Chinese"><br></td><td>  <input type="hidden" name="idss" value="2"><input type="Text" name="id" value="Muslim"><br></td><td>  <input type="hidden" name="idss" value="3"><input type="Text" name="id" value="Taiwan"><br></td><td>  <input type="hidden" name="idss" value="4"><input type="Text" name="id" value="Japan"><br></td></tr><tr><td>  <input type="hidden" name="idss" value="5"><input type="Text" name="id" value="Korean"><br></td><td>  <input type="hidden" name="idss" value="8"><input type="Text" name="id" value="Mexicanss"><br></td></tr></tbody></table><br>
+<center><input type="submit" value="Update"><center>
+
+
+
+</center></center></form></center></center></form></center></center></center></center></form></body></html>
